@@ -4,7 +4,7 @@ public class Dog extends Pet {
     private String favoriteToy;
     private boolean isFed;
 
-    public static final String DOG_NOISE = "Woof";
+    private static final String DOG_NOISE = "Woof";
 
     public Dog(String name, String favoriteToy, int age) {
         super(name, age);
@@ -23,9 +23,8 @@ public class Dog extends Pet {
         return favoriteToy;
     }
 
-    public String makeNoise() {
-        return DOG_NOISE;
-    }
+    @Override
+    public String makeNoise() {return DOG_NOISE;}
 
     public void feed() {
         this.isFed = true;

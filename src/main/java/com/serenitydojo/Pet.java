@@ -1,6 +1,6 @@
 package com.serenitydojo;
 
-public class Pet {
+public abstract class Pet {
     private String name;
     private int age;
 
@@ -27,4 +27,6 @@ public class Pet {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public abstract String makeNoise();
 }

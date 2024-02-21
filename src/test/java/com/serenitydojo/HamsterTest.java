@@ -13,5 +13,12 @@ public class HamsterTest {
         Assert.assertEquals("Wheel", rusty.getFavoriteGame());
         Assert.assertEquals(3, rusty.getAge());
     }
+
+
+    @Test
+    public void when_a_hamster_makes_noise() {
+        Pet rusty = new Hamster("Rusty","wheels",5);
+        Assert.assertEquals(rusty.makeNoise(),"Squeek");
+    }
 }
 
